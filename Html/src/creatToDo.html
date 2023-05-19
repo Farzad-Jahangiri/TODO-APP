@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../dist/app.css" />
+    <link rel="stylesheet" href="./../dist/custom.css">
+    <title>Creat TODO</title>
+  </head>
+  <body class="">
+    <header class="">
+      <div class="flex border border-b-black p-2">
+        <div class="ml-3 text-cyan-600">
+          <a href="./home.html" target="_self" rel="noopener noreferrer"
+            >Home</a
+          >
+        </div>
+        <div class="ml-3 text-cyan-600">
+          <a href="#" target="_self" rel="noopener noreferrer">Todoe</a>
+        </div>
+      </div>
+    </header>
+
+    <div id="main" class="flex flex-col justify-center items-center mt-10">
+      <form id="myForm">
+        <div class="flex flex-col mt-3">
+          <label for="title">Title *</label>
+          <input
+            id="title"
+            class="border w-96 border-black pl-3 h-8"
+            type="text"
+            placeholder="What will you do today?"
+            
+          />
+        </div>
+
+        <div class="flex flex-col mt-3">
+          <label for="description">Desciption</label>
+          <input
+            id="description"
+            class="border border-black w-96 pl-3 h-8"
+            type="text"
+            placeholder="Some-information"
+          />
+        </div>
+
+        <div class="flex flex-col mt-3">
+          <label for="dueDate">Due Date *</label>
+          <input
+            id="date"
+            class="border w-96 border-black pl-3 h-8"
+            type="date"
+            placeholder="10/31/2021"
+          />
+        </div>
+
+        <button
+          id="submit"
+          class="border border-black shadow-lg shadow-black w-96 mt-3 h-8 bg-blue-700"
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+    <div id="toast">sucess submit</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/apptodo.js"></script>
+  </body>
+</html>

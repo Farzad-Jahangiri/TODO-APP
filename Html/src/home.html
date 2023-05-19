@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./../dist/app.css" />
+  <link rel="stylesheet" href="./../dist/custom.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Home</title>
+</head>
+
+<body>
+  <header class="">
+    <div class="flex border border-b-black p-2">
+      <div class="ml-3 text-cyan-600">
+        <a href="#" target="_self" rel="noopener noreferrer">Home</a>
+      </div>
+      <div class="ml-3 text-cyan-600">
+        <a href="./creatToDo.html" target="_self" rel="noopener noreferrer">Todoe</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="flex flex-col justify-center items-center mt-10">
+
+    <div id="main"></div>
+
+    <!-- <div id="pageNext" class="flex mt-5 space-x-5 justify-end">
+      <div class="flex">
+        <p>Rows per page:</p>
+        <select id="rowToPage" name="rowToPage">
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+
+        </select>
+      </div>
+      <div class="flex">
+        <p id="conutPage">1 of 1</p>
+        <div class="flex">
+          <img class="w-8 pointer-hand" src="./icon/1814084_arrow_back_left_previous_icon.png" alt="image">
+          <img class="w-8 pointer-hand" src="./icon/1814086_arrow_forward_next_right_icon.png" alt="image">
+        </div>
+      </div>
+    </div> -->
+  </div>
+  <div id="modal">
+    <div>
+      <p id="titeledit" class="text-3xl"></p>
+      <p id="dateedit" class="text-2xl"></p>
+      <textarea name="" id="textaria" cols="30" rows="10"></textarea>
+      <button id="submit-green" onclick="submitedit()">submit</button>
+      <button id="submit-red" onclick="canceledit()">cancel</button>
+    </div>
+  </div>
+  <div id="modal-delet">
+    <div>
+      <div class="flex flex-col justify-center ">
+        <div class="flex items-center h-10 space-x-3">
+          <span class="material-symbols-outlined pointer-hand ml-3" >warning</span>
+          <p id="titeledit" class="text-3xl">Deleted</p>
+        </div>
+        <hr class="border-black m-2"></hr>
+        <p class="text-xl">Do you sure delet this item?</p>
+        <p id="titeldelet" class="text-xl">Do you sure delet this item?</p>
+        <hr class="border-black m-2"></hr>
+        <button id="submit-green" onclick="submitdelet()" class="m-2">submit</button>
+        <button id="submit-red" onclick="canceldelet()" class="m-2">cancel</button>
+      </div>
+    </div>
+  </div>
+  <div id="toast-delet">sucess delet</div>
+  <div id="toast">sucess delet</div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
