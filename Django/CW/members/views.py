@@ -10,7 +10,6 @@ import json
 def getAll(request):
   members = Member.objects.all()
   serializer = MemberSerializer(members, many=True)
-  print(serializer.data)
   return Response(serializer.data)
 
 
